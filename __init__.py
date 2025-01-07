@@ -8,7 +8,7 @@ import sqlite3
 app = Flask(__name__)                                                                                                                 
                                                                                                                                        
 @app.route('/exercice1')
-def hello_world(): 
+def exercice1(): 
     return render_template('exercice1.html')
 
 @app.route('/exercice2')
