@@ -7,9 +7,17 @@ import sqlite3
                                                                                                                                        
 app = Flask(__name__)                                                                                                                 
                                                                                                                                        
-@app.route('/')
+@app.route('/exercice1')
 def hello_world(): 
-    return render_template('hello.html')
+    return render_template('exercice1.html')
+
+@app.route('/exercice2')
+def hello_world(): 
+    return render_template('exercice2.html')
+
+@app.route('/exercice3')
+def hello_world(): 
+    return render_template('exercice3.html')
 
 key = Fernet.generate_key()
 f = Fernet(key)
