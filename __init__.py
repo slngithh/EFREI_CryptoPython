@@ -27,6 +27,11 @@ def svg():
 def maison(): 
     return render_template('maison.html')
 
+@app.route('/svg-cards')
+def cards(): 
+    return render_template('svg-cards.svg')
+
+
 key = Fernet.generate_key()
 f = Fernet(key)
 
