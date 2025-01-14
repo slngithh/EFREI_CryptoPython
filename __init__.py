@@ -23,6 +23,10 @@ def exercice3():
 def svg(): 
     return render_template('svg.html')
 
+@app.route('/maison')
+def maison(): 
+    return render_template('maison.html')
+
 key = Fernet.generate_key()
 f = Fernet(key)
 
