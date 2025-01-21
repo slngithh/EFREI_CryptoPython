@@ -34,6 +34,10 @@ def cards():
 @app.route('/chenille')
 def chen(): 
     return render_template('chenille.svg')
+
+@app.route('/des')
+def des():
+  return render_template(jeu_de_des.html')
   
 key = Fernet.generate_key()
 f = Fernet(key)
