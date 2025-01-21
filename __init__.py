@@ -39,7 +39,7 @@ def chen():
 def des():
   return render_template('jeu_de_des.html')
 
-@app.route('/bibliotheque')
+@app.route('/bibliotheque_images')
 def des():
   return render_template('bibliotheque.html')
   
