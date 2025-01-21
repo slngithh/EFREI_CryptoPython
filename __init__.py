@@ -37,7 +37,7 @@ def chen():
 
 @app.route('/des')
 def des():
-  return render_template(jeu_de_des.html')
+  return render_template('jeu_de_des.html')
   
 key = Fernet.generate_key()
 f = Fernet(key)
