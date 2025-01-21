@@ -41,7 +41,7 @@ def des():
 
 @app.route('/bibliotheque_images')
 def des():
-  return render_template('bibliotheque.html')
+  return render_template('bibliotheque_images.html')
   
 key = Fernet.generate_key()
 f = Fernet(key)
