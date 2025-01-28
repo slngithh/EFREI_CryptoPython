@@ -42,6 +42,10 @@ def des():
 @app.route('/bibliotheque')
 def bibliotheque():
   return render_template('bibliotheque.html')
+
+@app.route('/roulette')
+def roulette():
+  return render_template('roulette.html')
   
 key = Fernet.generate_key()
 f = Fernet(key)
