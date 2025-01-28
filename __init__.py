@@ -50,6 +50,10 @@ def roulette():
 @app.route('/roulette2')
 def roulette2():
   return render_template('roulette2.html')
+
+@app.route('/roulette3')
+def roulette3():
+  return render_template('roulette3.html')
   
 key = Fernet.generate_key()
 f = Fernet(key)
