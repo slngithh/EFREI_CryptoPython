@@ -5,6 +5,7 @@
 function lancer(){
 	var Val = Math.floor((Math.random() * 6)+1);
 	alert("Le pistolet a tiré le barillet numéro" + Val);
+	Val.style.fill=="blue"
 	if(document.getElementById("C'est la chambre Br "+Val).style.fill=="red"){alert("Perdu");}
 else{alert("Gagné");}
 }
@@ -19,7 +20,7 @@ function chambre(n){
 
 </head>
 <body>
-	<h1>Ma Roulette Russe</h1>
+	<h1>Ma Roulette Russe!</h1>
 
 	<svg width=200 height=200 style="background-color:antiquewhite">
 	<circle onclick="1()" cx="100" cy="100" r="95" stroke="black" stroke-width="3" fill="none" />
